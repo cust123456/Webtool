@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENO TOOL - Creative Solutions Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">GENO TOOL</span>
+            </div>
+            <nav class="nav">
+                <a href="#tools" class="nav-link">Tools</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">GENO TOOL</h1>
+                <p class="hero-subtitle">Công cụ sáng tạo cho tương lai</p>
+                <p class="hero-description">Bộ sưu tập các công cụ mạnh mẽ được thiết kế để giúp bạn tạo ra những điều tuyệt vời</p>
+                <button class="btn btn-primary" onclick="scrollToTools()">Khám Phá Ngay</button>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+                <div class="floating-shape shape-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="tools" id="tools">
+        <div class="container">
+            <div class="section-header">
+                <h2>Các Công Cụ Của Tôi</h2>
+                <p>Các tool được thiết kế để đơn giản hóa công việc của bạn</p>
+            </div>
+            
+            <div class="tools-grid" id="toolsGrid">
+                <!-- Tools sẽ được thêm vào đây bằng JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Embedded Tool Section -->
+    <section class="embedded-tool hidden" id="embeddedToolSection">
+        <div class="container">
+            <div class="section-header">
+                <h2>Chạy trực tiếp trong GENO TOOL</h2>
+                <p>Chọn tool để mở trực tiếp trong giao diện của bạn.</p>
+            </div>
+            <div class="embed-panel">
+                <div class="embed-meta">
+                    <h3 id="embedToolTitle">GENO TOOL</h3>
+                    <p id="embedToolDescription">Chọn một công cụ từ danh sách ở trên để chạy trực tiếp.</p>
+                    <div class="embed-note" id="embedToolNote">📋 Chọn tool để bắt đầu.</div>
+                <div class="embed-actions">
+                    <button id="embedReloadButton" class="btn btn-primary" type="button">Tải lại tool</button>
+                    <a id="embedFallbackButton" class="btn btn-secondary" target="_blank" href="#">Mở tool ngoài</a>
+                    <button id="embedCloseButton" class="btn btn-secondary" type="button">Đóng</button>
+                </div>
+            </div>
+            <div class="embed-frame-wrapper">
+                    <iframe id="embedToolFrame" src="" loading="lazy" title="Embedded Tool"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tại Sao Chọn GENO TOOL?</h2>
+                <p>Các tính năng nổi bật</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Tốc Độ</h3>
+                    <p>Xử lý nhanh chóng, kết quả tức thời</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Chính Xác</h3>
+                    <p>Kết quả chính xác, đáng tin cậy</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Hiện Đại</h3>
+                    <p>Công nghệ mới nhất, giao diện tương lai</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>An Toàn</h3>
+                    <p>Bảo vệ dữ liệu của bạn tối đa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>GENO TOOL</h4>
+                    <p>Những công cụ sáng tạo cho tương lai</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Trạng Thái Server</h4>
+                    <div id="serverStatus" style="font-size: 0.9rem; color: #a0a9c9;">
+                        <p>🔄 Đang kiểm tra...</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Mạng Xã Hội</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GENO TOOL. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
